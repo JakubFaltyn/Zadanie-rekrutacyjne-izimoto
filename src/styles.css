@@ -1,22 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 * {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
   margin: 0;
   box-sizing: border-box;
-	-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   color: white;
 }
 
-html, body {
-	text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-font-feature-settings: "liga" on;
-    font-feature-settings: "liga" on;;
-	overflow: auto;
+html,
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
+  overflow: auto;
 }
 
 header {
@@ -27,20 +32,26 @@ header {
   height: 65px;
 }
 
+/* Logo */
 
-.search {
-    display: flex;
-    border: none;
-    border-radius: 5px;
-    overflow: hidden;
+.logo {
+  margin-left: 26px;
 }
 
-.search__search-bar::placeholder {
-    color: #515151;
-    padding-left: 13px;
-    opacity: 0.7;
-    font-size: 16px;
-  }
+/* Search bar and categories dropdown */
+
+.search-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.search {
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
 .search__search-bar {
   width: 321px;
@@ -48,43 +59,170 @@ header {
   border: none;
   outline: none;
   padding: 0;
+  padding-left: 20px;
+}
+
+.search__search-bar::placeholder {
+  color: #515151;
+  opacity: 0.7;
+  font-size: 16px;
+}
+
+.search__search-bar:focus {
+  color: #515151;
 }
 
 .search__search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 108px;
-    height:40px;
-    border: none;
-    background-color: red;
-    font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 108px;
+  height: 40px;
+  border: none;
+  background-color: red;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 .categories-dropdown {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 150px;
-    height:40px;
-    border: none;
-    padding: 0;
-    background-color: #000000;
-    font-size: 13px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 145px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  background-color: #000000;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* Sell button and account menu dropdown */
+
+.dropdown-menu-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap:15px;
 }
 
 .sell {
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 120px;
-    height:40px;
-    border-color: #00a3e9;
-    padding: 0;
-    background-color: #000000;
-    font-size: 13px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 120px;
+  height: 40px;
+  border-color: #00a3e9;
+  padding: 0;
+  background-color: #000000;
+  font-size: 13px;
 
-    cursor: pointer;
-    border: 2px solid #00a3e9;
-    border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #00a3e9;
+  border-radius: 5px;
 }
+
+.account-dropdown {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100px;
+  height: 65px;
+  background-color: #2e2e2e;
+  font-size: 13px;
+  border: 0;
+
+  cursor: pointer;
+}
+
+.account-dropdown__content {
+  min-width: 240px; /* Set width of the dropdown */
+  background-color: #2e2e2e;
+  flex-direction: column;
+  display: flex;
+  position: absolute;
+  list-style: none;
+  padding-left: 30px;
+  z-index: 1;
+  top: 65px;
+  right: 0;
+}
+.account-dropdown:hover .account-dropdown__content {
+  display: flex; /* Display the dropdown on hover*/
+}
+
+.account-dropdown__content__item {
+  display: inline-flex;
+  height: 20px;
+  margin-top: 20px;
+  font-size: 15px;
+  padding-left: 30px;
+}
+
+#Log-out {
+  align-self: center;
+  padding-left: 0;
+  margin-top: 15px;
+  margin-bottom: 15px; /*problems*/
+}
+
+/* Dropdown decoration line */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  opacity: 0.6;
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Dropdown icons */
+
+.account-dropdown__content__item::before {
+  content: "";
+  display: block;
+  padding-right: 30px;
+  position: absolute;
+  right: 160px;
+}
+
+#My-account::before {
+  background: url("/img/My-account-icon.svg") no-repeat;
+  width: 17px;
+  height: 17px;
+}
+
+#Purchase-history::before {
+  background: url("/img/Purchase-history-icon.svg") no-repeat;
+  width: 21px;
+  height: 17px;
+}
+
+#My-offers::before {
+  background: url("/img/My-offers-icon.svg") no-repeat;
+  width: 21px;
+  height: 18px;
+}
+
+#Comments::before {
+  background: url("/img/Comments-icon.svg") no-repeat;
+  width: 22px;
+  height: 17px;
+}
+
+#Account-management::before {
+  background: url("/img/Account-management-icon.svg") no-repeat;
+  width: 18px;
+  height: 19px;
+  right: 162px;
+}
+
+#Log-out::before {
+  background: url("/img/Log-out-icon.svg") no-repeat;
+  width: 18px;
+  height: 18px;
+  right: 115px;
+}
+
+/* Media queries */

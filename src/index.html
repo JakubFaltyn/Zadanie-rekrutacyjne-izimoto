@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Izimoto</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+  <title>Izimoto</title>
 </head>
+
 <body>
-    <header>
-        <img class="logo" src="/img/Izimoto-logo.svg" href="#" alt="Izimoto logo">
-        <div class="search">
-            <input class="search__search-bar" type="text" name="input" placeholder="Wpisz nazwę części">
-            <button class="search__search-btn" type="button" name="search">
-                <img class="search__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon">
-                Szukaj
-            </button>
-        </div>
-        <button class="categories-dropdown" type="button" name="dropdown">
-            Przeglądaj kategorie
-            <img class="categories-dropdown__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon">
+  <header>
+    <img class="logo" src="/img/Izimoto-logo.svg" href="#" alt="Izimoto logo" />
+    <div class="search-wrapper">
+      <div class="search">
+        <input class="search__search-bar" type="text" name="input" placeholder="Wpisz nazwę części" />
+        <button class="search__search-btn" type="submit" name="search">
+          <img class="search__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon" />
+          Szukaj
         </button>
-        <button class="sell" type="button" name="sell">
-            <img class="sell__icon" src="/img/Sell-icon.svg" alt="sell icon">
-            Sprzedaj
-        </button>
-        <div class="account" >
-            <button class="account-dropdown" type="button" name="dropdown">
-            <img class="account-dropdown__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon">
-            </button>
-        </div>
-    </header>
+      </div>
+      <button class="categories-dropdown" type="button" name="dropdown">
+        Przeglądaj kategorie
+        <img class="categories-dropdown__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon" />
+      </button>
+    </div>
+    <div class="dropdown-menu-wrapper">
+      <button class="sell" type="button" name="sell">
+        <img class="sell__icon" src="/img/Sell-icon.svg" alt="Sell icon" />
+        Sprzedaj
+      </button>
+      <div class="account-dropdown">
+        <img class="account-dropdown__btn__avatar-icon" src="/img/account-avatar-icon.svg" alt="Avatar icon" />
+        <img class="account-dropdown__btn__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon" />
+        <ul class="account-dropdown__content">
+          <li class="account-dropdown__content__item" id="My-account">
+            Moje konto
+          </li>
+          <li class="account-dropdown__content__item" id="Purchase-history">
+            Historia zakupów
+          </li>
+          <li class="account-dropdown__content__item" id="My-offers">
+            Moje oferty
+          </li>
+          <li class="account-dropdown__content__item" id="Comments">
+            Komentarze
+          </li>
+          <li class="account-dropdown__content__item" id="Account-management">
+            Zarządzanie kontem
+          </li>
+          <hr />
+          <li class="account-dropdown__content__item" id="Log-out">
+            Wyloguj
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
 </body>
+
 </html>
