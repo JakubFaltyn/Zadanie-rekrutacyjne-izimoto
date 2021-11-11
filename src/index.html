@@ -11,13 +11,13 @@
 
 <body>
   <header>
-    <img class="logo" src="/img/Izimoto-logo.svg" href="#" alt="Izimoto logo" />
+    <img class="logo" src="/img/Izimoto-logo.svg" href="#" alt="Izimoto logo"/>
     <div class="search-wrapper">
       <div class="search">
         <input class="search__search-bar" type="text" name="input" placeholder="Wpisz nazwę części" />
         <button class="search__search-btn" type="submit" name="search">
           <img class="search__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon" />
-          Szukaj
+          <p>Szukaj</p>
         </button>
       </div>
       <button class="categories-dropdown" type="button" name="dropdown">
@@ -26,7 +26,10 @@
       </button>
     </div>
     <div class="dropdown-menu-wrapper">
-      <button class="sell" type="button" name="sell">
+      <button class="dropdown-menu-wrapper__search-btn" type="button" name="search">
+        <img class="dropdown-menu-wrapper__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon" />
+      </button>
+      <button class="sell" id="Sell-button" type="button" name="sell">
         <img class="sell__icon" src="/img/Sell-icon.svg" alt="Sell icon" />
         Sprzedaj
       </button>
@@ -34,6 +37,13 @@
         <img class="account-dropdown__btn__avatar-icon" src="/img/account-avatar-icon.svg" alt="Avatar icon" />
         <img class="account-dropdown__btn__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon" />
         <ul class="account-dropdown__content">
+          <div class="dark-filter"></div>
+          <li>
+            <button class="sell" id="Sell-button-menu" type="button" name="sell">
+              <img class="sell__icon" src="/img/Sell-icon.svg" alt="Sell icon" />
+              Sprzedaj
+            </button>
+          </li>
           <li class="account-dropdown__content__item" id="My-account">
             Moje konto
           </li>
