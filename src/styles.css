@@ -82,11 +82,12 @@ header {
   justify-content: space-around;
   width: 108px;
   height: 40px;
+  padding: 0 10px;
+  gap: 5px;
   border: none;
   background-color: red;
   font-size: 16px;
   cursor: pointer;
-  flex-shrink: 1;
 }
 
 .search__search-btn__icon {
@@ -179,6 +180,7 @@ header {
   z-index: 1;
   top: 65px;
   right: 0;
+  cursor:default;
 }
 
 .account-dropdown:hover .account-dropdown__content {
@@ -199,6 +201,7 @@ header {
   margin-top: 20px;
   font-size: 15px;
   padding-left: 30px;
+  cursor: pointer;
 }
 
 #Log-out {
@@ -288,12 +291,6 @@ hr {
 /* Media queries */
 
 @media only screen and (max-width: 1114px) {
-  .search__search-btn p {
-    display: none;
-  }
-  .search__search-btn {
-    max-width: 70px;
-  }
   .categories-dropdown {
     width: 100px;
     flex-shrink: 0;
@@ -309,6 +306,13 @@ hr {
   }
   .categories-dropdown {
     display: none;
+  }
+
+  .search__search-btn p {
+    display: none;
+  }
+  .search__search-btn {
+    max-width: 70px;
   }
 }
 
