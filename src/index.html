@@ -11,20 +11,22 @@
 
 <body>
   <header>
-    <img class="logo" src="/img/Izimoto-logo.svg" href="#" alt="Izimoto logo"/>
-    <div class="search-wrapper">
-      <div class="search">
-        <input class="search__search-bar" type="text" name="input" placeholder="Wpisz nazwę części" />
-        <button class="search__search-btn" type="submit" name="search">
-          <img class="search__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon" />
-          <p>Szukaj</p>
+    <div class="logo-and-search-wrapper">
+      <img class="logo" src="/img/Izimoto-logo.svg" href="#" alt="Izimoto logo"/>
+      <div class="search-wrapper">
+        <div class="search">
+          <input class="search__search-bar" type="text" name="input" placeholder="Wpisz nazwę części" />
+          <button class="search__search-btn" type="submit" name="search">
+            <img class="search__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon" />
+            <p>Szukaj</p>
+          </button>
+        </div>
+        <button class="categories-dropdown" type="button" name="dropdown">
+          Przeglądaj kategorie
+          <img class="categories-dropdown__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon" />
         </button>
       </div>
-      <button class="categories-dropdown" type="button" name="dropdown">
-        Przeglądaj kategorie
-        <img class="categories-dropdown__icon" src="/img/Dropdown-icon.svg" alt="Dropdown icon" />
-      </button>
-    </div>
+  </div>
     <div class="dropdown-menu-wrapper">
       <button class="dropdown-menu-wrapper__search-btn" type="button" name="search">
         <img class="dropdown-menu-wrapper__search-btn__icon" src="/img/Search-icon.svg" alt="Search icon" />
