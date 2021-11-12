@@ -327,38 +327,38 @@ hr {
 }
 
 #My-account::before {
-    background: url("/img/My-account-icon.svg") no-repeat;
+    background: url("./assets/My-account-icon.svg") no-repeat;
     width: 17px;
     height: 17px;
 }
 
 #Purchase-history::before {
-    background: url("/img/Purchase-history-icon.svg") no-repeat;
+    background: url("./assets/Purchase-history-icon.svg") no-repeat;
     width: 21px;
     height: 17px;
 }
 
 #My-offers::before {
-    background: url("/img/My-offers-icon.svg") no-repeat;
+    background: url("./assets/My-offers-icon.svg") no-repeat;
     width: 21px;
     height: 18px;
 }
 
 #Comments::before {
-    background: url("/img/Comments-icon.svg") no-repeat;
+    background: url("./assets/Comments-icon.svg") no-repeat;
     width: 22px;
     height: 17px;
 }
 
 #Account-management::before {
-    background: url("/img/Account-management-icon.svg") no-repeat;
+    background: url("./assets/Account-management-icon.svg") no-repeat;
     width: 18px;
     height: 19px;
     right: 162px;
 }
 
 #Log-out::before {
-    background: url("/img/Log-out-icon.svg") no-repeat;
+    background: url("./assets/Log-out-icon.svg") no-repeat;
     width: 18px;
     height: 18px;
     right: 115px;
@@ -475,7 +475,6 @@ hr {
     }
     .account-dropdown__content {
         min-width: 270px;
-        /* Set width of the dropdown */
         padding-top: 10px;
         top: 0;
         min-height: 100%;
@@ -483,10 +482,10 @@ hr {
         box-shadow: -3px 8px 24px -7px #000000;
     }
     .account-dropdown:hover .account-dropdown__content {
+        /* Display the dropdown on hover*/
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        /* Display the dropdown on hover*/
     }
     .dark-filter {
         /* Display dark filter on hover */
@@ -506,7 +505,7 @@ hr {
     }
     #Sell-button-menu::after {
         content: "";
-        background: url("/img/Cancel-icon.svg") no-repeat;
+        background: url("./assets/Cancel-icon.svg") no-repeat;
         width: 22px;
         height: 22px;
         display: block;
