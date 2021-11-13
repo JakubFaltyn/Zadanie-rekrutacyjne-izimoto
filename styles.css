@@ -68,7 +68,7 @@ header {
     -ms-flex-negative: 2;
     flex-shrink: 2;
     margin-right: 10px;
-    gap: 20px;
+    justify-content: space-between;
 }
 
 .search {
@@ -137,7 +137,6 @@ header {
     width: 108px;
     height: 40px;
     padding: 0 10px;
-    gap: 5px;
     border: none;
     background-color: #ff0022;
     font-size: 16px;
@@ -155,7 +154,6 @@ header {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 10px;
     height: 40px;
     border: none;
     background-color: #000000;
@@ -165,6 +163,7 @@ header {
 
 .categories-dropdown__icon {
     min-width: 14px;
+    margin-left: 10px;
 }
 
 
@@ -180,7 +179,6 @@ header {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    gap: 15px;
     -ms-flex-negative: 0;
     flex-shrink: 0;
 }
@@ -222,6 +220,7 @@ header {
     justify-content: space-around;
     width: 120px;
     height: 40px;
+    margin-right: 20px;
     border-color: #00a3e9;
     background-color: #000000;
     font-size: 13px;
@@ -556,6 +555,7 @@ hr {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
+        margin-right: 10px;
     }
     .search-wrapper {
         justify-self: flex-start;
